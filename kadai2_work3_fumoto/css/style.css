@@ -8,11 +8,13 @@ header {
     max-width: 960px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px;
     border: 1px solid red;
 }
 
 ul {
+    list-style: none;
     display: flex;
     gap: 15px;
 }
@@ -28,24 +30,24 @@ li:last-child {
     border-right: none;
 }
 
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .wrapper {
         flex-direction: column;
     }
-}
 
-.title {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
+    .title {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
 
-ul {
-    flex-direction: column;
-}
+    ul {
+        flex-direction: column;
+    }
 
-li {
-    border-right: none;
-    padding-bottom: 15px;
-    font-size: 30px;
-    border-bottom: 1px solid grey;
+    li {
+        border-right: none;
+        padding-bottom: 15px;
+        font-size: 15px;
+        border-bottom: 1px solid grey;
+    }
 }
