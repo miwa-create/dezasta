@@ -77,7 +77,7 @@ a img {
 .coffee_image {
     width: 44%;
     border-bottom-right-radius: 64px;
-    margin-left: 220px;
+    /* margin-left: 220px; */
 }
 
 .about_us_box {
