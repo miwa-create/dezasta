@@ -12,11 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alatsi&family=Diplomata+SC&family=Noto+Sans+JP:wght@100..900&display=swap"
         rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
-<body>
-    <header>
+<body class="wrap">
+    <header id="top">
         <div class="header_slider">
             <div>
                 <img src="./images/pc_first-100.jpg" alt="店内の様子">
@@ -35,6 +35,19 @@
                     <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn">
+                <span></span>
+
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <div class="message">
@@ -45,10 +58,13 @@
             足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
     </div>
 
-    <section>
-        <h2 id="about_us"></h2>
+    <section id="about_us">
+        <!-- <h2 id="about_us"></h2> -->
         <div class="about_us">
-            <img src="./images/pc_about-100.jpg" alt="コーヒーの写真" class="coffee_image">
+            <picture>
+                <source srcset="./images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                <img src="./images/pc_about-100.jpg" alt="コーヒーの写真" class="coffee_image">
+            </picture>
             <div class="about_us_box">
                 <h2 class="coffee_title">ABOUT US</h2>
                 <p class="about_message">私たちが提供する<br>
@@ -60,30 +76,42 @@
         </div>
     </section>
 
-    <section>
-        <h2 id="menu"></h2>
+    <section id="menu">
+        <!-- <h2 id="menu"></h2> -->
         <h2 class="menu">MENU</h2>
         <div class="menu_three">
             <div class="menu_item">
-                <img src="./images/pc_menu_drink-100.jpg" alt="ドリンクメニュー" class="drink_menu">
+                <picture>
+                    <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="./images/pc_menu_drink-100.jpg" alt="ドリンクメニュー" class="drink_menu">
+                </picture>
+
                 <h3>DRINK</h3>
                 <p class="drink_explanation">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
             <div class="menu_item">
-                <img src="./images/pc_menu_food-100.jpg" alt="フードメニュー" class="food_menu">
+                <picture>
+                    <source srcset="./images/food_sp@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="./images/pc_menu_food-100.jpg" alt="フードメニュー" class="food_menu">
+                </picture>
+
                 <h3>FOOD</h3>
                 <p class="food_explanation">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
             <div class="menu_item">
-                <img src="./images/pc_menu_sweets-100.jpg" alt="スイーツメニュー" class="sweets_menu">
+                <picture>
+                    <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="./images/pc_menu_sweets-100.jpg" alt="スイーツメニュー" class="sweets_menu">
+                </picture>
+
                 <h3>SWEETS</h3>
                 <p class="sweets_explanation">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2 id="gallery"></h2>
+    <section id="gallery">
+        <!-- <h2 id="gallery"></h2> -->
         <h2 class="gallery">GALLERY</h2>
         <div class="gallery_menu">
             <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
@@ -94,8 +122,8 @@
         </div>
     </section>
 
-    <section>
-        <h2 id="event"></h2>
+    <section id="event" class="event_name">
+        <!-- <h2 id="event"></h2> -->
         <h2 class="event">EVENT</h2>
         <div class="event_box">
             <div>
@@ -115,8 +143,8 @@
         </div>
     </section>
 
-    <section>
-        <h2 id="access"></h2>
+    <section id="access">
+        <!-- <h2 id="access"></h2> -->
         <h2 class="access">ACCESS</h2>
         <div class="map_wrap">
             <iframe
@@ -154,6 +182,16 @@
     <a href="#top" class="pagetop">
         <img src="./images/to_top@2x.png" alt="ページトップボタン">
     </a>
+
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_btn").toggleClass("open");
+                $(".sp_nav").fadeToggle();
+            })
+        })
+
+    </script>
 </body>
 
 </html>
