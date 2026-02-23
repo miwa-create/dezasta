@@ -420,6 +420,11 @@ footer {
         font-size: 32px;
     }
 
+    .text-message,
+    .about_text {
+        line-height: 2;
+    }
+
     .menu_three,
     .about_us,
     .footer_wright,
@@ -435,6 +440,11 @@ footer {
     .drink_explanation,
     .food_explanation {
         margin-bottom: 40px;
+    }
+
+    .coffee_title {
+        text-align: center;
+        margin-top: 40px;
     }
 
 
