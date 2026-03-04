@@ -10,8 +10,14 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="remodal.css">
-    <link rel="stylesheet" href="remodal-default-theme.css">
+    <!-- <link rel="stylesheet" href="remodal.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.css"
+        integrity="sha512-LVOzFPLcBUppn3NOx8FXJkh2TawWu/jk9ynbntKID6cjynQsfqmHlUbH72mjAwZXsu0LOLw26JoiC0qHJde70Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="remodal-default-theme.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.css"
+        integrity="sha512-nF9G9AnUEVv+zx285OqwGE8c1gmkys3qV6iuDK5rVG/UuZLWRgGBy/tN5WzSXXuZDZ1YvwhJ9+a/DTj71L8Lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,6 +27,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"
+        integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="wrap">
@@ -126,30 +135,59 @@
     <section id="gallery">
         <!-- <h2 id="gallery"></h2> -->
         <h2 class="gallery">GALLERY</h2>
-        <a href="#modal_c" class="gallery_menu">
-            <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
-            <img src="./images/pc_gallary_02-100.jpg" alt="ギャラリー２枚目">
-            <img src="./images/pc_gallary_03-100.jpg" alt="ギャラリー３枚目">
-            <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリー４枚目">
-            <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー５枚目">
-            <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
-            <img src="./images/pc_gallary_02-100.jpg" alt="ギャラリー２枚目">
-            <img src="./images/pc_gallary_03-100.jpg" alt="ギャラリー３枚目">
-            <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリー４枚目">
-            <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー５枚目">
-        </a>
+        <div class="gallery_list">
+            <a href="#modal_a" class="gallery_menu">
+                <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
+            </a>
+            <a href="#modal_b" class="gallery_menu">
+                <img src="./images/pc_gallary_02-100.jpg" alt="ギャラリー２枚目">
+            </a>
+            <a href="#modal_c" class="gallery_menu">
+                <img src="./images/pc_gallary_03-100.jpg" alt="ギャラリー３枚目">
+            </a>
+            <a href="#modal_d" class="gallery_menu">
+                <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリー４枚目">
+            </a>
+            <a href="#modal_e" class="gallery_menu">
+                <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー５枚目">
+            </a>
+            <a href="#modal_a" class="gallery_menu">
+                <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
+            </a>
+            <a href="#modal_b" class="gallery_menu">
+                <img src="./images/pc_gallary_02-100.jpg" alt="ギャラリー２枚目">
+            </a>
+            <a href="#modal_c" class="gallery_menu">
+                <img src="./images/pc_gallary_03-100.jpg" alt="ギャラリー３枚目">
+            </a>
+            <a href="#modal_d" class="gallery_menu">
+                <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリー４枚目">
+            </a>
+            <a href="#modal_e" class="gallery_menu">
+                <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー５枚目">
+            </a>
+        </div>
     </section>
 
-    <div class="remodal" data-remodal-id="modal_c">
+    <div class="remodal" data-remodal-id="modal_a">
         <button data-remodal-action="close" class="remodal-close"></button>
         <img src="./images/pc_gallary_01-100.jpg">
+    </div>
+    <div class="remodal" data-remodal-id="modal_b">
+        <button data-remodal-action="close" class="remodal-close"></button>
         <img src="./images/pc_gallary_02-100.jpg">
+    </div>
+    <div class="remodal" data-remodal-id="modal_c">
+        <button data-remodal-action="close" class="remodal-close"></button>
         <img src="./images/pc_gallary_03-100.jpg">
+    </div>
+    <div class="remodal" data-remodal-id="modal_d">
+        <button data-remodal-action="close" class="remodal-close"></button>
         <img src="./images/pc_gallary_04-100.jpg">
+    </div>
+    <div class="remodal" data-remodal-id="modal_e">
+        <button data-remodal-action="close" class="remodal-close"></button>
         <img src="./images/pc_gallary_05-100.jpg">
-        <button data-remodal-action="cancel" class="remodal-cancel">
-            閉じる
-        </button>
     </div>
 
     <section id="event" class="event_name">
@@ -228,7 +266,8 @@
                 arrows: false,
             });
 
-            $('.gallery_menu').slick({
+            $('.gallery_list').slick({
+                arrows: false,
                 autoplay: true,
                 autoplaySpeed: 2000,
                 slidesToShow: 5,
