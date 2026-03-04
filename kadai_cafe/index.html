@@ -10,6 +10,8 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="remodal.css">
+    <link rel="stylesheet" href="remodal-default-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -124,14 +126,31 @@
     <section id="gallery">
         <!-- <h2 id="gallery"></h2> -->
         <h2 class="gallery">GALLERY</h2>
-        <div class="gallery_menu">
+        <a href="#modal_c" class="gallery_menu">
             <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
             <img src="./images/pc_gallary_02-100.jpg" alt="ギャラリー２枚目">
             <img src="./images/pc_gallary_03-100.jpg" alt="ギャラリー３枚目">
             <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリー４枚目">
             <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー５枚目">
-        </div>
+            <img src="./images/pc_gallary_01-100.jpg" alt="ギャラリー１枚目">
+            <img src="./images/pc_gallary_02-100.jpg" alt="ギャラリー２枚目">
+            <img src="./images/pc_gallary_03-100.jpg" alt="ギャラリー３枚目">
+            <img src="./images/pc_gallary_04-100.jpg" alt="ギャラリー４枚目">
+            <img src="./images/pc_gallary_05-100.jpg" alt="ギャラリー５枚目">
+        </a>
     </section>
+
+    <div class="remodal" data-remodal-id="modal_c">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/pc_gallary_01-100.jpg">
+        <img src="./images/pc_gallary_02-100.jpg">
+        <img src="./images/pc_gallary_03-100.jpg">
+        <img src="./images/pc_gallary_04-100.jpg">
+        <img src="./images/pc_gallary_05-100.jpg">
+        <button data-remodal-action="cancel" class="remodal-cancel">
+            閉じる
+        </button>
+    </div>
 
     <section id="event" class="event_name">
         <!-- <h2 id="event"></h2> -->
@@ -208,9 +227,36 @@
                 dots: true,
                 arrows: false,
             });
+
+            $('.gallery_menu').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                ]
+            });
+
         })
 
     </script>
+
 </body>
 
 </html>
