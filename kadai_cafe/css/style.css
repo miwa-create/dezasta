@@ -181,6 +181,7 @@ a img {
     width: 44%;
 }
 
+
 .coffee_image {
     flex-basis: 44%;
     border-bottom-right-radius: 64px;
@@ -355,6 +356,10 @@ footer {
     padding: 80px 0 60px;
 }
 
+/* .footer_in br {
+    margin-bottom: 1.5;
+} */
+
 .footer_box {
     display: flex;
     max-width: 1000px;
@@ -377,8 +382,13 @@ footer {
     padding-bottom: 16px;
 }
 
+.footer_in {
+    line-height: 1.5;
+}
+
 .footer_name {
     width: 64px;
+    line-height: 1.5;
 }
 
 
@@ -397,6 +407,21 @@ footer {
     z-index: 8888;
 }
 
+/* スライダー */
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    font-size: 10px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+
 
 /* スマホ版 */
 @media screen and (max-width: 1100px) {
@@ -407,22 +432,42 @@ footer {
     .text-message {
         font-size: 20px;
     }
-
-    .coffee_title {
-        font-size: 32px;
-    }
 }
 
 @media screen and (max-width: 767px) {
+    .header_wrap h1 {
+        width: 70%;
+    }
 
+    .coffee_title,
+    .menu,
+    .gallery,
+    .event,
+    .access {
+        font-size: 32px;
+    }
+
+    .event_wrap {
+        font-size: 16px;
+        display: block;
+    }
 
     .main-message {
-        font-size: 32px;
+        font-size: 31px;
+    }
+
+    .about_message {
+        font-size: 24px;
     }
 
     .text-message,
     .about_text {
         line-height: 2;
+    }
+
+    .en-message,
+    .text-message {
+        font-size: 16px;
     }
 
     .menu_three,
@@ -432,10 +477,10 @@ footer {
         display: block;
     }
 
-
     .about_us_box {
         width: auto;
     }
+
 
     .drink_explanation,
     .food_explanation {
@@ -447,6 +492,18 @@ footer {
         margin-top: 40px;
     }
 
+
+    .message {
+        margin-bottom: 80px;
+        margin-top: 126px;
+    }
+
+    .menu,
+    .gallery,
+    .event,
+    .access {
+        margin-top: 80px;
+    }
 
     .event_text {
         white-space: nowrap;
@@ -470,14 +527,47 @@ footer {
         margin-left: 0;
     }
 
-    .menu_item,
+    .footer_wright {
+        padding-bottom: 24px;
+    }
+
+    /* .menu_item,
     .footer_box,
     .c {
-        width: 90%;
+        width: 100%;
+    } */
+
+    .menu_item {
+        width: 100%;
+    }
+
+    .menu_item img {
+        width: 100%;
+    }
+
+    .menu_three {
+        padding: 0 20px;
+    }
+
+    .about_us {
+        padding: 0 20px;
+    }
+
+    .about_us img {
+        width: 100%;
+    }
+
+    .footer_box {
+        padding: 0 20px;
     }
 
     .pagetop {
         z-index: 1;
+    }
+
+    .footer_in,
+    .footer_name {
+        line-height: 1.5;
     }
 
 }

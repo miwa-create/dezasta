@@ -1,0 +1,19 @@
+@charset "UTF-8";
+h1 {
+  color: #41ced0;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+h1 span {
+  font-size: 20px;
+}
+h1::before {
+  content: "類似要素";
+}
+h1_text {
+  background: #41ced0;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+@use "var.scss" as *;
+
+h1 {
+    color: $main_color;
+    font-family: $font_mincho;
+
+    span {
+        font-size: 20px;
+    }
+
+    &::before {
+        content: "類似要素";
+    }
+
+    &_text {
+        background: $main_color;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+    }
+}
