@@ -510,6 +510,7 @@ footer {
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.3;
+        padding-top: 8px;
     }
 
     .event_box div {
